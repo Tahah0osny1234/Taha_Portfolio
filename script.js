@@ -10,16 +10,21 @@ links.forEach((link) => {
   link.addEventListener("click", () => nav.classList.remove("open"));
 });
 
-const sections = [...document.querySelectorAll("section[id]")];
+const sections = [...document.querySelectorAll("main section[id]")];
 
 const onScroll = () => {
-  const y = window.scrollY + 120;
-  let current = sections[0]?.id;
+  const y = window.scrollY + 160;
+  let current = "";
+  
   for (const section of sections) {
-    if (section.offsetTop <= y) current = section.id;
+    if (section.offsetTop <= y) {
+      current = section.id;
+    }
   }
+
   links.forEach((link) => {
-    link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
+    const href = link.getAttribute("href")?.replace("#", "");
+    link.classList.toggle("active", href === current);
   });
 };
 
