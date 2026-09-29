@@ -2,12 +2,12 @@
   --bg: #071019;
   --bg-2: #0b1622;
   --panel: rgba(10, 22, 32, 0.86);
-  --line: rgba(94, 230, 165, 0.22);
-  --mint: #5cffb1;
-  --mint-2: #3adf8a;
-  --mint-dim: #1f6b4a;
-  --text: #e8f6ee;
-  --muted: #8aa196;
+  --line: rgba(96, 165, 250, 0.22);
+  --mint: #60a5fa;      /* Replaced mint primary accent with bright blue */
+  --mint-2: #3b82f6;    /* Replaced mint secondary accent with vibrant blue */
+  --mint-dim: #1d4ed8;  /* Replaced dark mint with dark blue */
+  --text: #e8f2fe;
+  --muted: #8aa1c0;
   --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
   --radius: 22px;
 }
@@ -19,8 +19,8 @@ body {
   min-height: 100vh;
   font-family: Inter, system-ui, sans-serif;
   color: var(--text);
-  background: radial-gradient(1200px 700px at 10% 20%, #0d2a22 0%, transparent 50%),
-              radial-gradient(900px 600px at 90% 10%, #0a2430 0%, transparent 46%),
+  background: radial-gradient(1200px 700px at 10% 20%, #0d1e3a 0%, transparent 50%),
+              radial-gradient(900px 600px at 90% 10%, #0a1e30 0%, transparent 46%),
               var(--bg);
   overflow-x: hidden;
 }
@@ -34,8 +34,8 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; }
 
 .page-bg { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
-.circuit { position: absolute; width: min(38vw, 420px); height: 100%; color: rgba(92, 255, 177, 0.12); }
-.circuit circle { fill: rgba(92, 255, 177, 0.28); }
+.circuit { position: absolute; width: min(38vw, 420px); height: 100%; color: rgba(96, 165, 250, 0.12); }
+.circuit circle { fill: rgba(96, 165, 250, 0.28); }
 .circuit-left { left: -40px; top: 0; }
 .circuit-right { right: -40px; top: 80px; }
 .bg-shield {
@@ -124,8 +124,8 @@ img { max-width: 100%; }
 .btn:hover { transform: translateY(-1px); }
 .btn-solid {
   background: var(--mint-2);
-  color: #04110b;
-  box-shadow: 0 0 24px rgba(58, 223, 138, 0.28);
+  color: #ffffff;
+  box-shadow: 0 0 24px rgba(59, 130, 246, 0.35);
 }
 .btn-outline, .btn-ghost {
   border-color: var(--mint);
@@ -191,7 +191,7 @@ h1 span { color: var(--mint); }
   width: 320px;
   height: 320px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(46, 140, 96, 0.45), transparent 68%);
+  background: radial-gradient(circle, rgba(29, 78, 216, 0.45), transparent 68%);
   filter: blur(8px);
 }
 .maze-shield {
@@ -221,7 +221,7 @@ h1 span { color: var(--mint); }
   top: 50px;
   width: 160px;
   height: 140px;
-  color: rgba(92, 255, 177, 0.45);
+  color: rgba(96, 165, 250, 0.45);
   z-index: 1;
 }
 .hud-card {
@@ -259,7 +259,7 @@ h1 span { color: var(--mint); }
   right: 18%;
   top: 28px;
   bottom: 18px;
-  background: linear-gradient(90deg, #0a2a22, #163c32 40%, #0c241c);
+  background: linear-gradient(90deg, #0a1e3a, #162c52 40%, #0c1a34);
   border-radius: 0 0 80px 80px / 0 0 28px 28px;
 }
 .cyl-top {
@@ -269,8 +269,8 @@ h1 span { color: var(--mint); }
   top: 16px;
   height: 36px;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 40%, #7dffc8, #1c5a44 70%);
-  box-shadow: 0 0 24px rgba(92,255,177,.35);
+  background: radial-gradient(circle at 50% 40%, #93c5fd, #1e40af 70%);
+  box-shadow: 0 0 24px rgba(96, 165, 250, .35);
 }
 .cyl-glow {
   position: absolute;
@@ -279,7 +279,7 @@ h1 span { color: var(--mint); }
   bottom: 0;
   height: 20px;
   border-radius: 50%;
-  background: rgba(92,255,177,.18);
+  background: rgba(96, 165, 250, .18);
   filter: blur(6px);
 }
 .hud-stats {
@@ -356,7 +356,7 @@ h2 {
   border-radius: 10px;
   color: var(--mint);
 }
-.contact-row a:hover { background: rgba(92,255,177,.08); }
+.contact-row a:hover { background: rgba(96, 165, 250, .08); }
 
 .shell main { padding-bottom: 28px; }
 
